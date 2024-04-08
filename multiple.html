@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Progress Bar with Multiple Pages</title>
+<link rel="stylesheet" href="multiple.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <div class="page active" id="page1">
+        <div class="question">
+            <label style="margin-top: 10px;" for="text1">What is your full name?</label>
+            <input type="text" id="text1" class="input-text">
+            <label style="margin-top: 10px;" for="text2">What is your email address?</label>
+            <input type="text" id="text2" class="input-text">
+        </div>
+        <button class="btn" id="nextPage1">Next</button>
+    </div>
+
+    <div class="page" id="page2">
+        <div class="question">
+            <label for="select1">What is your favorite programming language?</label>
+            <select id="select1" class="select-box">
+                <option value="">Select option...</option>
+                <option value="option1">Java</option>
+                <option value="option2">Python</option>
+                <option value="option3">Javascript</option>
+            </select>
+            <label style="margin-top: 10px;" for="select2">Which operating system do you prefer for development?</label>
+            <select id="select2" class="select-box">
+                <option value="">Select option...</option>
+                <option value="option1">Windows</option>
+                <option value="option2">MacOS</option>
+                <option value="option3">Linux</option>
+            </select>
+        </div>
+        <button class="btn" id="previousPage2">Previous</button>
+        <button class="btn" id="nextPage2">Next</button>
+    </div>
+
+    <div class="page" id="page3">
+        <div class="question">
+            <label>How do you prefer to learn new technologies?</label>
+            <div >
+                <input type="radio" name="radio" value="option1" class="radio-btn">
+                <label for="option1">Online courses</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" value="option2" class="radio-btn">
+                <label for="option2">Hands-on projects</label>
+            </div>
+        </div>
+        <button class="btn" id="previousPage3">Previous</button>
+    </div>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="multiple.js"></script>
+</body>
+</html>
